@@ -1,0 +1,62 @@
+#PCB Manufacturer Rules
+
+## OSHPark
+### Design Specs
+* 6 mil minimum trace width
+* 6 mil minimum spacing
+* at least 15 mil clearances from traces to the edge of the board
+* 13 mil minimum drill size
+* 7 mil minimum annular ring
+
+### Gerber Files
+* boardname.GTL - Top Layer
+* boardname.GBL - Bottom Layer
+* boardname.GTS - Top Soldermask
+* boardname.GBS - Bottom Soldermask
+* boardname.GTO - Top Silkscreen
+* boardname.GBO - Bottom Silkscreen
+* boardname.GKO - Board Outline
+* boardname.G2L (only if you're uploading a four layer board)
+* boardname.G3L (only if you're uploading a four layer board)
+* boardname.XLN - Drills
+
+## ITEAD
+### Design Specs
+* 6 mil minimum silkscreen line width
+* 32 mil minimum silkscreen text height
+* Layers							1 - 4
+* Material						FR-4
+* Board Dimension (max)			500mm X1100mm
+* Board Dimension (min)			10mm X10mm
+* Outline Dimension Accuracy		± 0.2mm
+* Board Thickness					0.40mm--2.0mm
+* Board Thickness Tolerance		± 10%
+* Dielectric Separation thickness	0.075mm--5.00mm
+* Conductor Width (min)			0.15mm( Recommend>8mil )
+* Conductor Space (min)			0.15mm( Recommend>8mil)
+* Outer Conductor thickness		35um
+* Inner Conductor thickness		17um--100um
+* Copper to Edge					0.25mm,0.5mm
+* Plated Component,Plated via Diameter(Mechanical)	0.3mm--6.30mm
+* Plated Hole Diameter Tolerance(Mechanical)			0.08mm
+* Unplated Hole Diameter Tolerance					0.05mm
+* Hole Space(min)					0.25mm
+* Hole to Edge					0.4mm
+* Annular Ring(min)				0.15mm
+* Aspect Ratio					8:01
+* Solder Resist Type				Photosensitive ink
+* Solder Resist Color				Black ,Green, White, Blue ,Yellow
+* Solder Resist Clearance			0.1mm
+* Solder Resist Coverage			0.1mm
+* Plug Hole Diameter				0.3mm--0.65mm
+* Selective Finish				HASL, ENIG
+* Silkscreen line width (mim)		6mil
+
+### Gerber Files
+* pcbname.GTL - Top Layer
+* pcbname.GBL - Bottom Layer
+* pcbname.GTS - Top Soldermask
+* pcbname.GBS - Bottom Soldermask
+* pcbname.GTO - Top Silkscreen
+* pcbname.GBO - Bottom Silkscreen
+* pcbname.TXT - Drills
