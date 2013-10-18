@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5799,7 +5799,7 @@ For COM-09806 in the SparkFun catalog&lt;br&gt;</description>
 </classes>
 <parts>
 <part name="U1" library="SparkFun-DigitalIC" deviceset="ATMEGA328P_PDIP" device=""/>
-<part name="J1" library="SparkFun-Connectors" deviceset="AVR_SPI_PRG_6" device="NS"/>
+<part name="J1" library="SparkFun-Connectors" deviceset="AVR_SPI_PRG_6" device="NS" value="SPI"/>
 <part name="JP2" library="SparkFun-Connectors" deviceset="M03" device="LOCK"/>
 <part name="JP3" library="SparkFun-Connectors" deviceset="M03" device="LOCK"/>
 <part name="JP4" library="SparkFun-Connectors" deviceset="M03" device="LOCK"/>
@@ -5820,7 +5820,7 @@ For COM-09806 in the SparkFun catalog&lt;br&gt;</description>
 <part name="C5" library="SparkFun-Passives" deviceset="CAP" device="0805"/>
 <part name="C6" library="SparkFun-Passives" deviceset="CAP" device="0805" value=".1uf"/>
 <part name="JP1" library="SparkFun-Connectors" deviceset="M04" device="LOCK"/>
-<part name="U$3" library="SparkFun-DiscreteSemi" deviceset="DIODE-ZENER" device="-BZT52"/>
+<part name="D1" library="SparkFun-DiscreteSemi" deviceset="DIODE-ZENER" device="-BZT52"/>
 <part name="IC3" library="microchip_tc7660" deviceset="TC7660" device="SO-08"/>
 <part name="C7" library="SparkFun-Capacitors" deviceset="CAP_POL" device="C" value="10uF"/>
 <part name="C8" library="SparkFun-Capacitors" deviceset="CAP_POL" device="C" value="10uF"/>
@@ -5900,7 +5900,7 @@ For COM-09806 in the SparkFun catalog&lt;br&gt;</description>
 <instance part="C5" gate="G$1" x="93.98" y="312.42" rot="R180"/>
 <instance part="C6" gate="G$1" x="193.04" y="289.56" rot="R180"/>
 <instance part="JP1" gate="G$1" x="233.68" y="302.26" rot="R180"/>
-<instance part="U$3" gate="G$1" x="182.88" y="287.02" rot="R90"/>
+<instance part="D1" gate="G$1" x="182.88" y="287.02" rot="R90"/>
 <instance part="IC3" gate="G$1" x="-30.48" y="297.18"/>
 <instance part="C7" gate="G$1" x="-172.72" y="309.88"/>
 <instance part="C8" gate="G$1" x="-137.16" y="309.88"/>
@@ -6017,6 +6017,7 @@ For COM-09806 in the SparkFun catalog&lt;br&gt;</description>
 <junction x="-96.52" y="302.26"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="-86.36" y1="299.72" x2="-86.36" y2="302.26" width="0.1524" layer="91"/>
+<junction x="-86.36" y="302.26"/>
 </segment>
 <segment>
 <pinref part="C9" gate="G$1" pin="+"/>
@@ -6046,7 +6047,7 @@ For COM-09806 in the SparkFun catalog&lt;br&gt;</description>
 <wire x1="200.66" y1="281.94" x2="200.66" y2="284.48" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="200.66" y1="281.94" x2="200.66" y2="279.4" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="A"/>
+<pinref part="D1" gate="G$1" pin="A"/>
 <wire x1="182.88" y1="284.48" x2="182.88" y2="281.94" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="281.94" x2="193.04" y2="281.94" width="0.1524" layer="91"/>
 <junction x="193.04" y="281.94"/>
@@ -6144,6 +6145,9 @@ For COM-09806 in the SparkFun catalog&lt;br&gt;</description>
 <wire x1="-93.98" y1="226.06" x2="-99.06" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="-99.06" y1="226.06" x2="-99.06" y2="205.74" width="0.1524" layer="91"/>
 <wire x1="-99.06" y1="205.74" x2="-68.58" y2="205.74" width="0.1524" layer="91"/>
+<junction x="-99.06" y="226.06"/>
+<junction x="-68.58" y="205.74"/>
+<junction x="-68.58" y="203.2"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="6"/>
@@ -6169,7 +6173,7 @@ For COM-09806 in the SparkFun catalog&lt;br&gt;</description>
 <wire x1="193.04" y1="294.64" x2="193.04" y2="292.1" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="294.64" x2="182.88" y2="294.64" width="0.1524" layer="91"/>
 <label x="170.18" y="294.64" size="1.778" layer="95"/>
-<pinref part="U$3" gate="G$1" pin="C"/>
+<pinref part="D1" gate="G$1" pin="C"/>
 <wire x1="182.88" y1="294.64" x2="170.18" y2="294.64" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="289.56" x2="182.88" y2="294.64" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
@@ -6687,6 +6691,7 @@ For COM-09806 in the SparkFun catalog&lt;br&gt;</description>
 <wire x1="-190.5" y1="213.36" x2="-190.5" y2="215.9" width="0.1524" layer="91"/>
 <wire x1="-190.5" y1="215.9" x2="-198.12" y2="215.9" width="0.1524" layer="91"/>
 <label x="-198.12" y="215.9" size="1.778" layer="95"/>
+<junction x="-190.5" y="215.9"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="PC5(ADC5/SCL)"/>
@@ -6707,6 +6712,7 @@ For COM-09806 in the SparkFun catalog&lt;br&gt;</description>
 <wire x1="-205.74" y1="208.28" x2="-205.74" y2="215.9" width="0.1524" layer="91"/>
 <wire x1="-205.74" y1="215.9" x2="-215.9" y2="215.9" width="0.1524" layer="91"/>
 <label x="-215.9" y="215.9" size="1.778" layer="95"/>
+<junction x="-205.74" y="215.9"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="PC4(ADC4/SDA)"/>
@@ -6927,6 +6933,7 @@ For COM-09806 in the SparkFun catalog&lt;br&gt;</description>
 <pinref part="Y1" gate="G$1" pin="2"/>
 <pinref part="C12" gate="G$1" pin="1"/>
 <wire x1="-86.36" y1="233.68" x2="-81.28" y2="233.68" width="0.1524" layer="91"/>
+<junction x="-81.28" y="233.68"/>
 </segment>
 </net>
 <net name="PB7" class="0">
@@ -6938,6 +6945,7 @@ For COM-09806 in the SparkFun catalog&lt;br&gt;</description>
 <pinref part="C15" gate="G$1" pin="1"/>
 <wire x1="-86.36" y1="226.06" x2="-81.28" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="-81.28" y1="226.06" x2="-81.28" y2="228.6" width="0.1524" layer="91"/>
+<junction x="-81.28" y="228.6"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -6950,6 +6958,41 @@ For COM-09806 in the SparkFun catalog&lt;br&gt;</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,78.74,292.1,U$1G$1,-V,GND,,,"/>
+<approved hash="104,1,78.74,307.34,U$1G$1,+V,12V,,,"/>
+<approved hash="104,1,71.12,264.16,U$1G$2,-IN,N$6,,,"/>
+<approved hash="104,1,71.12,259.08,U$1G$2,+IN,POWER2,,,"/>
+<approved hash="104,1,88.9,261.62,U$1G$2,OUT,N$12,,,"/>
+<approved hash="104,1,129.54,302.26,U$1G$3,-IN,VSHUNT1,,,"/>
+<approved hash="104,1,129.54,297.18,U$1G$3,+IN,N$5,,,"/>
+<approved hash="104,1,147.32,299.72,U$1G$3,OUT,N$3,,,"/>
+<approved hash="104,1,132.08,264.16,U$1G$4,-IN,VSHUNT2,,,"/>
+<approved hash="104,1,132.08,259.08,U$1G$4,+IN,N$12,,,"/>
+<approved hash="104,1,149.86,261.62,U$1G$4,OUT,N$8,,,"/>
+<approved hash="104,1,78.74,213.36,U$2G$1,-V,GND,,,"/>
+<approved hash="104,1,78.74,228.6,U$2G$1,+V,12V,,,"/>
+<approved hash="104,1,71.12,185.42,U$2G$2,-IN,N$18,,,"/>
+<approved hash="104,1,71.12,180.34,U$2G$2,+IN,POWER4,,,"/>
+<approved hash="104,1,88.9,182.88,U$2G$2,OUT,N$19,,,"/>
+<approved hash="104,1,132.08,220.98,U$2G$3,-IN,VSHUNT3,,,"/>
+<approved hash="104,1,132.08,215.9,U$2G$3,+IN,N$20,,,"/>
+<approved hash="104,1,149.86,218.44,U$2G$3,OUT,N$10,,,"/>
+<approved hash="104,1,132.08,185.42,U$2G$4,-IN,VSHUNT4,,,"/>
+<approved hash="104,1,132.08,180.34,U$2G$4,+IN,N$19,,,"/>
+<approved hash="104,1,149.86,182.88,U$2G$4,OUT,N$9,,,"/>
+<approved hash="106,1,-157.48,231.14,LED+,,,,,"/>
+<approved hash="106,1,-15.24,208.28,RW,,,,,"/>
+<approved hash="106,1,-157.48,254,WR,,,,,"/>
+<approved hash="108,1,-86.36,302.26,GND,,,,,"/>
+<approved hash="108,1,-99.06,226.06,GND,,,,,"/>
+<approved hash="108,1,-68.58,203.2,GND,,,,,"/>
+<approved hash="108,1,-68.58,205.74,GND,,,,,"/>
+<approved hash="108,1,-190.5,215.9,SCL,,,,,"/>
+<approved hash="108,1,-205.74,215.9,SDA,,,,,"/>
+<approved hash="108,1,-81.28,233.68,PB6,,,,,"/>
+<approved hash="108,1,-81.28,228.6,PB7,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
